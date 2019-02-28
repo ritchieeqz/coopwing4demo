@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">	
+      <a href="#" class="navbar-brand"><img src="img/logo2.svg" alt="" width="300px" style=" position: fixed;" ></a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbar-collapse-main" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="fas fa-bars"></span>
+      </button>
+  
+  
+      <div class="collapse navbar-collapse" id="navbar-collapse-main">
+    <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a href="home.html" class="nav-link">หน้าหลัก</a></li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      ระเบียบ
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="./aml.html">เงินกู้สมาชิกสมทบ</a>
+                      <a class="dropdown-item" href="./Ordinary-loan.html">เงินกู้สามัญ</a>
+                      <a class="dropdown-item" href="./saving.html">เงินรับฝาก</a>
+                      <a class="dropdown-item" href="./member.html">สมาชิก</a>
+                      <a class="dropdown-item" href="./Associate_member.html">สมาชิกสมทบ</a>
+                      
+                  </div>
+              </li>
+              <li class="nav-item"><a href="./home.html#historyPage" id="jumpTo" role="button" onclick="jumpTo('#historyPage')" class="nav-link">ประวัติสหกรณ์</a></li>
+              <li class="nav-item"><a href="./home.html#interestRatePage" id="jumpTo" role="button" onclick="jumpTo('#interestRatePage')" class="nav-link">อัตราดอกเบี้ย</a></li>
+              <li class="nav-item"><a href="./banking.html" class="nav-link">ธุระกรรมธนาคาร</a></li>
+    </ul>
+  <!-- Show when Loged in -->
+  <ul class="navbar-nav navbar-right ml-auto">
+      <li class="nav-item"><a href="./deposit.html" class="nav-link active">เงินรับฝาก</a></li>
+      <li class="nav-item"><a href="./capitalstock.html" class="nav-link">ทุนเรือนหุ้น</a></li>
+      <li class="nav-item"><a href="./loan.html" class="nav-link">เงินกู้</a></li>
+  </ul>
+          <ul class="navbar-nav navbar-right ml-auto">
+      <!-- Show when Loged in -->
+      <li class="nav-item dropdown"><a href="#location" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="DropdownUserMenu" aria-haspopup="true" aria-expanded="false">
+         <img src="asset/img/avatar.svg" width="45" height="45" alt="" class="rounded-circle"> <span>มาณี  ใจดี</span> 
+      </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="DropdownUserMenu">
+          <a class="dropdown-item" href="./profile.html">ดูข้อมูลส่วนตัว</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="./home.html">ออกจากระบบ <i class="fas fa-sign-out-alt"></i></a>
+        </div>
+      </li>
+  
+              <!-- <li class="nav-item"><a href="#" class="nav-link" role="button" data-toggle="modal" data-target="#exampleModalCenter"> เข้าสู่ระบบ <i class="fas fa-sign-in-alt"></i></a></li> -->
+          </ul>
+      </div>
+  
+  
+  </div>
+  </nav>

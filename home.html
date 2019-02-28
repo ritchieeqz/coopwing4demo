@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wing 4 Saving Coop</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/myjquery.js"></script>
+    <script src="asset/js/all.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">	
+      <a href="#" class="navbar-brand"><img src="img/logo2.svg" alt="" width="300px" style=" position: fixed;" ></a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbar-collapse-main" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="fas fa-bars"></span>
+      </button>
+  
+  
+      <div class="collapse navbar-collapse" id="navbar-collapse-main">
+    <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a href="home.html" class="nav-link active">หน้าหลัก</a></li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      ระเบียบ
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="./aml.html">เงินกู้สมาชิกสมทบ</a>
+                    <a class="dropdown-item" href="./Ordinary-loan.html">เงินกู้สามัญ</a>
+                    <a class="dropdown-item" href="./saving.html">เงินรับฝาก</a>
+                    <a class="dropdown-item" href="./member.html">สมาชิก</a>
+                    <a class="dropdown-item" href="./Associate_member.html">สมาชิกสมทบ</a> 
+                  </div>
+              </li>
+              <li class="nav-item"><a href="./home.html#historyPage" id="jumpTo" role="button" onclick="jumpTo('#historyPage')" class="nav-link">ประวัติสหกรณ์</a></li>
+              <li class="nav-item"><a href="./home.html#interestRatePage" id="jumpTo" role="button" onclick="jumpTo('#interestRatePage')" class="nav-link">อัตราดอกเบี้ย</a></li>
+              <li class="nav-item"><a href="./banking.html" class="nav-link">ธุระกรรมธนาคาร</a></li>
+    </ul>
+  <!-- Show when Loged in -->
+  <!-- <ul class="navbar-nav navbar-right ml-auto">
+      <li class="nav-item"><a href="./deposit.html" class="nav-link">เงินรับฝาก</a></li>
+      <li class="nav-item"><a href="./capitalstock.html" class="nav-link">ทุนเรือนหุ้น</a></li>
+      <li class="nav-item"><a href="./loan.html" class="nav-link">เงินกู้</a></li>
+  </ul> -->
+          <ul class="navbar-nav navbar-right ml-auto">
+          <!-- Show when Loged in -->
+          <!-- <li class="nav-item dropdown"><a href="#location" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="DropdownUserMenu" aria-haspopup="true" aria-expanded="false">
+            <img src="asset/img/avatar.svg" width="45" height="45" alt="" class="rounded-circle"> <span>มาณี  ใจดี</span> 
+          </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="DropdownUserMenu">
+              <a class="dropdown-item" href="#">ดูข้อมูลส่วนตัว</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">ออกจากระบบ <i class="fas fa-sign-out-alt"></i></a>
+            </div>
+          </li> -->
+  
+              <li class="nav-item"><a href="#" class="nav-link" role="button" data-toggle="modal" data-target="#exampleModalCenter"> เข้าสู่ระบบ <i class="fas fa-sign-in-alt"></i></a></li>
+          </ul>
+      </div>
+  
+  
+  </div>
+  </nav>
+    
+    <div class="header-block" id="home">
+        <div class="text-content">
+                <h1 style="font-family: EkkamaiStandard">สหกรณ์ออมทรัพย์ข้าราชการกองบิน 4 จำกัด</h1>
+                <h3>Wing 4 Savings Cooperative Limited</h3>
+        </div>
+        <div class="sign-down">
+           <i class="fas fa-chevron-down fa-3x"></i>
+        </div>
+    </div>
+
+    <div class="padding">
+        <div class="container News-board">
+            <div class="row">
+                <div class="News-board-sign"><h3><i class="fas fa-bullhorn"></i> กระดานข่าว</h3></div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment <span class="badge badge-secondary badge-danger">New</span></h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <a href="#" class="btn btn-primary">อ่านต่อ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment <span class="badge badge-secondary badge-danger">New</span></h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+                      <a href="#" class="btn btn-primary">อ่านต่อ</a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 20 mins ago</small></p>
+                      <a href="#" class="btn btn-primary">อ่านต่อ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                      <a href="#" class="btn btn-primary">อ่านต่อ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 35 mins ago</small></p>
+                        <a href="#" class="btn btn-primary">อ่านต่อ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 40 mins ago</small></p>
+                          <a href="#" class="btn btn-primary">อ่านต่อ</a>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="fixed">
+    </div>
+    <div class="padding" id="interestRatePage">
+      <div class="container">
+        <div class="row">
+          <h3>อัตราดอกเบี้ย <i class="fas fa-chart-line"></i></h3>
+        </div>
+        <p> </p>
+        <div class="row">
+          <div class="col-sm-12">
+              <table class="table table-bordered text-center">
+                  <thead>
+                    <tr class="bg-success text-light">
+                      <th scope="col">ประเภท</th>
+                      <th scope="col">อัตรา</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>เงินรับฝากออมทรัพย์</th>
+                      <td>2.50%</td>
+                    </tr>
+                    <tr>
+                      <th>เงินรับฝากออมทรัพย์พิเศษ</th>
+                      <td>4%</td>
+                    </tr>
+                    <tr>
+                      <th>เงินให้กู้แก่สมาชิก</th>
+                      <td>6.50%</td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!-- <hr> -->
+    <hr> 
+
+    <div class="padding" id="historyPage">
+      <div class="container">
+        <div class="row text-primary">
+          <h3><i class="fas fa-history"></i> ประวัติสหกรณ์</h3>
+        </div>
+        <p> </p>
+        <div class="row">
+          <div class="col-sm-12" id="historyTxt">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer_tpl" class="container-fluid text-center m-t-100"></footer>
+    <!--  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalCenterTitle">ยินดีต้อนรับ !</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Modal Body -->
+            <div class="container-fluid">
+              <form>
+                <div class="row">
+                  <div class="col-sm-12">
+                      <div class="form-group">
+                          
+                          <label for="InputUsernameSingIn">ชื่อผู้ใช้ :</label>
+                          <div class="input-group mb-3 input-group-lg">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text input-group-bg-w" id="UsernameIcon"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="InputUsernameSingIn" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="UsernameIcon">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="InputPasswordSignIn">รหัสผ่าน :</label>
+                          <div class="input-group mb-3 input-group-lg">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text input-group-bg-w" id="PasswordIcon"><i class="fas fa-lock"></i></span>
+                              </div>
+                              <input type="password" name="InputUsernameSingIn" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="PasswordIcon">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <a href="./deposit.html" class="btn btn-primary btn-block btn-lg">เข้าสู่ระบบ</a>
+                          <!-- <button type="button" class="btn btn-primary btn-block btn-lg">เข้าสู่ระบบ</button> -->
+                        </div>
+                  </div>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

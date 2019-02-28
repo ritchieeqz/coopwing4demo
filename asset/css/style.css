@@ -1,0 +1,193 @@
+
+/*
+    Color Scheme
+    #3b7fed Blue de France
+    #6693ae Rackley
+    #a8dadc Light Blue
+    #e63946 Desire
+    #fafafa snow
+    
+*/
+
+
+@font-face{
+    font-family: "EkkamaiStandard";
+    src: url(../webfonts/EkkamaiStandard-Light.ttf);
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.landing-Cover {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+    background: url(../img/landing-cover.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.landing-text {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    color: #FFF;
+}
+
+.landing-text h1{
+    font-size: 500%;
+    font-weight: 700;
+
+}
+
+.landing-text h3{
+    font-family: "EkkamaiStandard";
+}
+
+
+.header-block {
+    width: 100%;
+    height: 100%;
+    background: url(../img/wpp02.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: table;
+    position: relative;
+}
+
+.header-padding{
+    padding-top: 125px;
+}
+
+.text-content{
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    color: #FFF;
+
+}
+
+.text-content h1 {
+    font-size: 500%;
+    font-weight: 600;
+}
+
+.sign-down {
+    color: #FFF;
+    display: table-row;
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    font-weight: lighter;
+}
+
+.padding {
+    padding: 80px 0px;
+}
+
+.News-board-sign{
+    padding-left: 20px;
+}
+
+.standalone-padding{
+    padding-top: 100px;
+    height: 60%;
+}
+
+#fixed {
+    width: 100%;
+    height: 30%;
+    background: url(../img/wpp05.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: table;
+    position: relative;
+}
+
+
+
+/* NavBar */
+
+.navbar{
+	background-color: #fafafa !important;
+}
+
+.navbar-brand{
+	min-height: 60px;
+	padding: 0px 15px 5px;
+}
+
+.navbar-nav li a{
+	text-decoration: none;
+}
+.navbar-nav li a{
+	color: #3b3b3b;
+	font-family: "EkkamaiStandard";
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.navbar-nav li a:hover {
+	color: #e63946;
+}
+.navbar-toggler{
+	color: #e63946;
+}
+
+nav ul li a.active{
+	color: #3b7fed !important;
+	font-weight: 700;
+
+}
+
+.dropdown-menu {
+    background-color: #fafafa !important;
+}
+.dropdown-item:hover {
+    background-color: #e63946 !important;
+    color: #fafafa !important;
+}
+/* Utility */
+
+.font-ekamai{
+    font-family: 'EkkamaiStandard';
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: #252627;
+    padding: 5px 5px 10px 5px;
+    color: #FFF;
+    vertical-align: middle;
+    position: relative;
+    bottom: -300px;
+}
+
+.link-out{
+    padding: 12px;
+    color: #FFF;
+}
+.link-out:hover{
+	color: #d3d4d9;
+}
+
+
+/* Input Group */
+
+.input-group-bg-w {
+    background-color: #FFF !important;
+}

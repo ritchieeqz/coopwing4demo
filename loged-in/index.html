@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wing 4 Saving Coop</title>
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../asset/js/bootstrap.min.js"></script>
+    <!-- <script src="../asset/js/myjquery.js"></script> -->
+    <script src="../asset/js/all.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">	
+            <a href="#" class="navbar-brand"><img src="../asset/img/logo2.svg" alt="" width="300px" style=" position: fixed;" ></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbar-collapse-main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="fas fa-bars"></span>
+            </button>
+        
+        
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="../home.html" class="nav-link">หน้าหลัก</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ระเบียบ
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../aml.html">เงินกู้สมาชิกสมทบ</a>
+                            <a class="dropdown-item" href="../Ordinary-loan.html">เงินกู้สามัญ</a>
+                            <a class="dropdown-item" href="../saving.html">เงินรับฝาก</a>
+                            <a class="dropdown-item" href="../member.html">สมาชิก</a>
+                            <a class="dropdown-item" href="../Associate_member.html">สมาชิกสมทบ</a>
+                            
+                        </div>
+                    </li>
+                <li class="nav-item"><a href="../home.html#historyPage" id="jumpTo" role="button" onclick="jumpTo('#historyPage')" class="nav-link">ประวัติสหกรณ์</a></li>
+                <li class="nav-item"><a href="../home.html#interestRatePage" id="jumpTo" role="button" onclick="jumpTo('#interestRatePage')" class="nav-link">อัตราดอกเบี้ย</a></li>
+                <li class="nav-item"><a href="../banking.html" class="nav-link">ธุระกรรมธนาคาร</a></li>
+            </ul>
+    
+            <ul class="navbar-nav navbar-right ml-auto">
+            <!-- Show when Loged in -->
+                <li class="nav-item dropdown"><a href="#location" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="DropdownUserMenu" aria-haspopup="true" aria-expanded="false">
+                    <img src="../asset/img/avatar.svg" width="45" height="45" alt="" class="rounded-circle"> <span>มาณี  ใจดี</span> 
+                </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="DropdownUserMenu">
+                    <a class="dropdown-item" href="../profile.html">ดูข้อมูลส่วนตัว</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="../home.html">ออกจากระบบ <i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+                </li>
+        
+                    <!-- <li class="nav-item"><a href="#" class="nav-link" role="button" data-toggle="modal" data-target="#exampleModalCenter"> เข้าสู่ระบบ <i class="fas fa-sign-in-alt"></i></a></li> -->
+            </ul>
+            </div>
+        
+        
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="standalone-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 border-right">
+                    <div class="nav flex-column nav-pills text-white" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-deposit-tab" data-toggle="pill" href="#v-pills-deposit" role="tab" aria-controls="v-pills-deposit" aria-selected="true">เงินฝาก</a>
+                    <a class="nav-link" id="v-pills-capitalstock-tab" data-toggle="pill" href="#v-pills-capitalstock" role="tab" aria-controls="v-pills-capitalstock" aria-selected="false">ทุนเรือนหุ้น</a>
+                    <a class="nav-link" id="v-pills-loan-tab" data-toggle="pill" href="#v-pills-loan" role="tab" aria-controls="v-pills-loan" aria-selected="false">เงินกู้</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!-- tap เงินฝาก -->
+                        <div class="tab-pane fade show active" id="v-pills-deposit" role="tabpanel" aria-labelledby="v-pills-deposit-tab">
+                            <div class="card-columns">
+                                <div class="card">
+                                    <div class="card-header">
+                                        บัญชีเลขที่: <span><u>1-101-11501-1</u></span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><b>ประเภทบัญชี</b> : ออมทรัพย์</p>
+                                        <p><b>ยอดคงเหลือ</b> : <span class="text-success">12,456</span> บาท</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        บัญชีเลขที่: <span><u>1-554-60001-1</u></span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><b>ประเภทบัญชี</b> : ออมทรัพย์</p>
+                                        <p><b>ยอดคงเหลือ</b> : <span class="text-success">7,250</span> บาท</p>
+                                    </div>
+                                </div>
+                                    
+                                <div class="card">
+                                    <div class="card-header">
+                                        บัญชีเลขที่: <span><u>1-201-22401-4</u></span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><b>ประเภทบัญชี</b> : ออมทรัพย์</p>
+                                        <p><b>ยอดคงเหลือ</b> : <span class="text-success">3,670</span> บาท</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- <div class="card">
+                                    <div class="card-header">
+                                        บัญชีเลขที่: <span><u>1-420-40011-1</u></span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><b>ประเภทบัญชี</b> : ออมทรัพย์</p>
+                                        <p><b>ยอดคงเหลือ</b> : <span class="text-success">42,000</span> บาท</p>
+                                    </div>
+                                </div> -->
+                                
+                            </div>
+                        </div>
+                        <!-- tap ทุนเรือนหุ้น -->
+                        <div class="tab-pane fade" id="v-pills-capitalstock" role="tabpanel" aria-labelledby="v-pills-capitalstock-tab">
+                            <div class="card-columns">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>ทุนเรือนหุ้น</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><b>หมายเลขสมาชิกทุนเรือน</b> : #020010</p>
+                                        <p><b>จำนวนหุ้น</b> : <span>12,456</span> หุ้น</p>
+                                        <p><b>จำนวนเงิน</b> : <span>5000</span> บาท</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tap เงินกู้ -->
+                        <div class="tab-pane fade" id="v-pills-loan" role="tabpanel" aria-labelledby="v-pills-loan-tab">
+                            <div class="card-columns">
+                                <div class="card border-warning" >
+                                    <div class="card-header">
+                                        สัญญาเงินกู้เลขที่: #210510 
+                                    </div>
+                                    <div class="card-body">
+                                        <p><b>วันที่เริ่ม</b> : 10/11/2560 </p>
+                                        <p><b>สิ้นสุดวันที่</b> : 10/11/2561 </p>
+                                        <p><b>ยอดกู้</b> : <span class="text-success">50,000</span></p>
+                                        <p><b>ยอดคงเหลือ</b> : <span class="text-danger">10,000</span></p>
+                                        <p><b>ส่งรายเดือน</b> : <span>4,166</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="card border-success" >
+                                    <div class="card-header">
+                                        สัญญาเงินกู้เลขที่: #210489 
+                                    </div>
+                                    <div class="card-body">
+                                        <p><b>วันที่เริ่ม</b> : 5/1/2560 </p>
+                                        <p><b>สิ้นสุดวันที่</b> : 5/1/2561 </p>
+                                        <p><b>ยอดกู้</b> : <span class="text-success">20,000</span></p>
+                                        <p><b>ยอดคงเหลือ</b> : <span class="text-success">0</span></p>
+                                        <p><b>ส่งรายเดือน</b> : <span class="text-dark">1,666</span></p>
+                                        </div>
+                                    </div>
+                                
+                                <div class="card border-success">
+                                    <div class="card-header">
+                                        สัญญาเงินกู้เลขที่: #210320 
+                                    </div>
+                                    <div class="card-body">
+                                        <p><b>วันที่เริ่ม</b> : 10/05/2559 </p>
+                                        <p><b>สิ้นสุดวันที่</b> : 10/05/2560 </p>
+                                        <p><b>ยอดกู้</b> : <span class="text-success">30,000</span></p>
+                                        <p><b>ยอดคงเหลือ</b> : <span class="text-success">0</span></p>
+                                        <p><b>ส่งรายเดือน</b> : <span class="text-dark">2,500</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer_tpl" class="container-fluid text-center">
+        <div class="row pt-5">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3>CONNECT</h3>
+                <a class="link-out" href="#" target="_blank"> <i class="fab fa-facebook-square fa-3x"></i> </a>
+                <a class="link-out" href="#" target="_blank"> <i class="fab fa-line fa-3x"></i> </a>
+            </div>
+        </div>
+    </footer>
+    <!--  -->
+
+    
+
+</body>
+</html>
