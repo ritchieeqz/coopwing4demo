@@ -18,7 +18,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    background-color: #FFF;
+    background-color: rgb(255, 238, 0) !important;
 }
 
 .landing-Cover {
@@ -26,7 +26,7 @@ html,body{
     height: 100%;
     display: table;
     position: relative;
-    background: url(../img/landing-cover.jpg) no-repeat center center fixed;
+    /*background: url(../img/landing-cover.jpg) no-repeat center center fixed;*/
     background-size: cover;
 }
 
@@ -34,12 +34,13 @@ html,body{
     text-align: center;
     vertical-align: middle;
     display: table-cell;
-    color: #FFF;
+    color: #000000;
 }
 
 .landing-text h1{
     font-size: 500%;
     font-weight: 700;
+    color: #000000;
 
 }
 
